@@ -1,0 +1,55 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MethodNameKeyGenerator"
+	ui:generateLocales="default">
+	
+	<ui:style>
+		li{
+			font-size: 20px;
+		}
+	</ui:style>
+	
+	<div class="slide">
+		<header><ui:msg key="3_header">Actualmente...</ui:msg></header>
+		<section>
+		    <p>
+		    	Volviendo a las aburridas aplicaciones empresariales
+		    </p>
+			<ul class="summary">
+				<li>
+					la mayoria de las aplicaciones tienen un approach combinado Web 1.0 + HTML mejorado
+					con JavaScript
+				</li>
+				
+				<li>
+					La re-carga de paginas es reemplazada paulatinamente por llamadas Ajax
+				</li>				
+				
+				<li>
+					Utilizan distintas herramientas para desarrollar del lado del cliente (JQuery, Dojo, Prototype) y del 
+        			backend (Rails, <a href="http://www.djangoproject.com/">Django</a>, etc) 
+				</li>
+				
+				<li>
+					Poco a poco las logica de la aplicacion es trasladada al cliente. 
+				</li>				
+			</ul> 
+			
+			<p>
+				Existen librerias JavaScript que permiten un gran grado de control
+				como <i>JQuery, Dojo y Prototype</i>
+			</p>
+				
+			<ul class="summary">
+				<li>
+					Abstraen la implementacion de la tecnologia subyacente (browser, DOM, etc)
+				</li>
+				<li>
+					Las aplicaciones creadas con estas herramientas son dificiles de mantener 
+				</li>
+			</ul>
+			
+		</section>
+	</div>
+</ui:UiBinder>

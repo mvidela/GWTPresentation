@@ -1,0 +1,50 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MethodNameKeyGenerator"
+	ui:generateLocales="default">
+	
+	<ui:style>
+		li{
+			font-size: 20px;
+		}
+	</ui:style>
+	
+	<div class="slide">
+		<header><ui:msg key="3_header">Applicaciones Ajax tradicionales</ui:msg></header>
+		<section>
+		    <p>
+		    	Qué permiten las aplicaciones Ajax tradicionales?
+		    </p>
+			<ul class="summary">
+			
+				<li>
+	  				Utilizan el modelo de navegacion entre paginas y al mismo tiempo agregan funcionalidad
+	  				mediante codigo javaScript o por medio de librerias como JQuery, Dojo, etc.
+	  			</li>
+	  			
+				<li>
+					Interaccion con el usuario rapida con el usuario gracias a la capacidad de modificar 
+	  				dinamicamente la interfaz, por ejemplo expandir elementos y mostrar nuevos elementos en 
+	  				la pantalla.
+				</li>
+	  			
+				<li>Comunicacion con el servidor en background, eviatando el ciclo de 
+					<br></br>
+					<br></br>
+					<span>
+					<ul>
+					 <li>
+					 	<span class="html">solicitud</span>
+					 	<span class="key">→</span> 
+					 	<span class="html">espera</span> 
+					 	<span class="key">→</span> 
+				 	 	<span class="html">rendering</span>
+				 	 </li>
+				 	</ul>
+				 	</span>
+				 </li>
+			</ul> 
+		</section>
+	</div>
+</ui:UiBinder>

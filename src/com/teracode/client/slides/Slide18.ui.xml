@@ -1,0 +1,47 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MethodNameKeyGenerator"
+	ui:generateLocales="default">
+	
+	<ui:style>
+		li{
+			font-size: 20px;
+		}
+	</ui:style>
+	
+	<div class="slide">
+		<header><ui:msg key="3_header">Como funciona?</ui:msg></header>
+		<section>
+			<ul class="summary">
+				<li>
+					La implementacion cada clase que debe interactuar con con los componentes suyacentes es implementada en JSNI
+     				para distiintas plataformas si es necesario.
+				</li>
+				
+				<li>
+					La JRE Emulation library actua como una VM, permitiendo que la programacion del cliente sea muy parecida 
+					a la del servidor
+				</li>
+				
+				<li>
+					El compilador compila el codigo Java a JavaScript realizando todo tipo de optimizaciones incluyendo la generacion
+     				de scripts especializados de a cuerdo a cada plataforma cuya sea necesario de acuerdo a las funciones
+     				nativas que la aplicacion utilice.
+				</li>
+				
+				<li>
+					El Hosted Browser permite debuggear nuestro codigo java que corren en el cliente tal y como debugueamos el codigo del servidor.
+				</li>
+				
+				<li>
+					El mecanismo RCP facilita al extremo la comunicacion entre el cliente y el servidor.
+				</li>
+				
+				<li>
+					La UI Class Library provee widgets que permiten declarar la vista utilizando un modelo muy similar a Swing
+				</li>
+			</ul> 
+		</section>
+	</div>
+</ui:UiBinder>

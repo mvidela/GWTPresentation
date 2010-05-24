@@ -1,0 +1,12 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MethodNameKeyGenerator"
+	ui:generateLocales="default">
+	<div class="slide">
+		<header><ui:msg key="3_header" description="Rough Timeline of Web Technologies">Un poco de historia</ui:msg></header>
+		<section>
+		    <img style='width: 84%; margin: 30px auto; display: block; border: 3px solid #ccc;' src='/resources/Web_development_timeline.png' />
+		</section>
+	</div>
+</ui:UiBinder>

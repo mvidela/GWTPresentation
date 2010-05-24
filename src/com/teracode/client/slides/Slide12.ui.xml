@@ -1,0 +1,49 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MethodNameKeyGenerator"
+	ui:generateLocales="default">
+	
+	<ui:style>
+		li{
+			font-size: 20px;
+		}
+	</ui:style>
+	
+	<div class="slide">
+		<header><ui:msg key="3_header">Rich Internet Applications</ui:msg></header>
+		<section>
+		    <p>
+		    	Son aplicaciones que tienen muchas de las caracteristicas de las 
+		    	aplicaciones desktop.  
+		    </p>
+			<ul class="summary">
+				<li>
+					Generalemente son interpretadas por un plugin (Flash) o mediante caracteristicas
+					especificas de un browser (ejemplo, XUL).
+				</li>
+				
+				<li>
+					Actualmente Flash, Java Applets y Silverlight son considerados los frameworks
+					mas populares al momento.
+				</li>				
+				
+				<li>
+					Ajax, es considerado por algunos como un método para generar este tipo de aplicaciones
+					pero es considerado como un tipo diferente de tecnología
+				</li>
+				
+				<li>
+					HTML5 nace con el objeto de eliminar la necesidad de estos plugins propietarios
+				</li>
+				
+			</ul> 
+			
+			<P>Ejemplos: 
+				<A HREF="http://google-web-toolkit-incubator.googlecode.com/svn/trunk/demo/GWTCanvasDemo/GWTCanvasDemo.html" onClick="popup = window.open('http://google-web-toolkit-incubator.googlecode.com/svn/trunk/demo/GWTCanvasDemo/GWTCanvasDemo.html', 'Ejemplo1', 'height=450,width=500,scrollbars=yes,resizable=yes'); return false" target="_blank">Ejemplo1</A>, 
+				<a href="GooglePacman/index.html">Ejemplo 2</a>,
+				<a href="http://code.google.com/p/quake2-gwt-port/">Ejemplo 3</a>
+			</P>
+		</section>
+	</div>
+</ui:UiBinder>

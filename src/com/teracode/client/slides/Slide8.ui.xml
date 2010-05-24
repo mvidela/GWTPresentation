@@ -1,0 +1,39 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MethodNameKeyGenerator"
+	ui:generateLocales="default">
+	
+	<ui:style>
+		li{
+			font-size: 20px;
+		}
+	</ui:style>
+	
+	<div class="slide">
+		<header><ui:msg key="3_header">Qué es Ajax?</ui:msg></header>
+		<section>
+			<p>
+			En un principio el termino Ajax era utilizado para definir las tecnicas que combinaban las siguientes
+			tecnologias:
+			</p>
+			<ul class="summary">
+			  <li>
+				HTML/XHTML y CSS para la presentacion
+			  </li>
+			  <li>
+				DOM (Document Object Model) para presentacion e interaccion dinamicas
+			  </li>
+			  <li>
+				XML y XSLT como lenguaje de intercambio, manipulacion y presentacion de datos
+			  </li>
+			  <li>
+				El objeto XMLHttpRequest para la comunicacion asincrónica.
+			  </li>
+			  <li>
+				JavaScript para implementar la logica del cliente y atar las teconologias nombradas
+			  </li>			  
+			</ul>
+		</section>
+	</div>
+</ui:UiBinder>

@@ -1,0 +1,63 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MethodNameKeyGenerator"
+	ui:generateLocales="default" xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		span.year {
+			display: inline-block;
+			text-align: right;
+			width: 120px;
+			letter-spacing: -2px;
+			padding-right: 10px;
+		}
+		
+		hr {
+			visibility: hidden;
+			padding: 0;
+			margin: 0 0 -20px 0;
+		}
+	</ui:style>
+	<div class="slide">
+		<header><ui:msg key="3_header">Un poco de historia</ui:msg></header>
+		<section>
+			<ul>
+				<A href="GooglePacman/index.html">Ejemplo 1</A>
+				<span class="{style.year}">1991</span>
+				<span class="html">HTML</span>
+				<br />
+				<span class="{style.year}">1994</span>
+				<span class="html">HTML 2</span>
+				<br />
+				<span class="{style.year}">1996</span>
+				<span class="css">CSS 1</span>
+				+
+				<span class="js">JavaScript</span>
+				<br />
+				<span class="{style.year}">1997</span>
+				<span class="html">HTML 4</span>
+				<br />
+				<span class="{style.year}">1998</span>
+				<span class="css">CSS 2</span>
+				<br />
+				<span class="{style.year}">2000</span>
+				<span class="html">XHTML 1</span>
+				<br />
+				<span class="{style.year}">
+					<em class="stroke">2002</em>
+				</span>
+				<span class="css"><ui:msg key="3_tableless" description="Tableless Web Design">Tableless Web Design</ui:msg></span>
+				<br />
+				<span class="{style.year}">
+					<em class="stroke">2005</em>
+				</span>
+				<span class="js">AJAX</span>
+				<br />
+				<span class="{style.year}">
+					<em class="stroke">2009</em>
+				</span>
+				<span class="html">HTML 5</span>
+			</ul>
+		</section>
+	</div>
+</ui:UiBinder>

@@ -1,0 +1,45 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MethodNameKeyGenerator"
+	ui:generateLocales="default">
+	
+	<ui:style>
+		li{
+			font-size: 20px;
+		}
+	</ui:style>
+	
+	<div class="slide">
+		<header><ui:msg key="3_header">El punto de quiebre</ui:msg></header>
+		<section>
+			<ul class="summary">
+			  <li>
+			  		La carga asyncronica de contenidos empezo a ser practica cuando Sun introdujo los Java applets en 
+        			1995.  Estas permitian que codigo cliente compilado cargara informacion en forma asincranica desde
+					web servers despues de que una pagina fuera cargada. [3]  
+			  </li>
+			  <li>
+			  		En 1996, Internet Explorer introdujo el elemento IFrame en HTML, que tambien permitía la la carga
+					asyncronica. [4][5]  En 1999, Microsoft creo el control ActiveX XMLHTTP en Internet Explorer 5, que 
+					luego fue adoptado por Mozilla, Safari, Opera y otros browsers como el objeto XMLHttpRequest nativo.
+			  </li>
+			  
+			  <li>
+			  		Microsoft adopto y mantuvo el modelo XMLHttpRequest hasta la version 7 de su browser, aunque la version
+					ActiveX del mismo todavia es soportada.
+			  </li>
+			  
+			  <li>
+			  		La funcionalidad de carga enviar requests en background al servidor fue casi desconocida hasta la 
+					aparicion de aplicaciones online como Outlook Web Access (2000),	Oddpost (2002) y luego, muy 
+					notablemente Google con su aplicacion full Ajax Gmail (2004) y Google Maps (2005).
+			  </li>
+			  <li>
+			  		En Abril del 2006 el W3C oficializo el primer draft de la especificacion con el fin de establecer un 
+					nuevo estandard en la web.
+			  </li>
+			</ul>
+		</section>
+	</div>
+</ui:UiBinder>

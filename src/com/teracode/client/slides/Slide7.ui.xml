@@ -1,0 +1,28 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MethodNameKeyGenerator"
+	ui:generateLocales="default">
+	
+	<ui:style>
+		li{
+			font-size: 20px;
+		}
+	</ui:style>
+	
+	<div class="slide">
+		<header><ui:msg key="3_header">The Thin Client, Thick Client Cycle</ui:msg></header>
+		<section>
+			<ul class="summary">
+			  <li>
+				    Aca deberia explayarme un poco mas sobre el tema.. Quizas te animas??			  		
+			  </li>
+			  <li>
+			  	 <a href="http://onstartups.com/tabid/3339/bid/161/The-Thin-Client-Thick-Client-Cycle.aspx">
+			  	 	“All of this has happened before and all of it will happen again."
+			  	 </a>  
+			  </li>
+			</ul>
+		</section>
+	</div>
+</ui:UiBinder>

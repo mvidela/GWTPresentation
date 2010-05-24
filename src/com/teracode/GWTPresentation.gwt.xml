@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='gwtpresentation'>
+	<inherits name='com.google.gwt.user.User' />
+	<inherits name="com.google.gwt.i18n.I18N" />
+	<!-- 
+	<inherits name='com.google.gwt.maps.Maps' />
+	<inherits name='com.googlecode.gwt.geolocalizer.Geolocalizer' />
+	 
+	<inherits name='com.google.code.gwt.database.Html5Database' />
+	<inherits name='com.google.code.gwt.html5.media.HTML5Media' />
+	<extend-property name="locale" values="fr" />
+	-->
+	
+	<entry-point class='com.teracode.client.SlideViewer' />
+	
+	<!--For Maps API v3
+		<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	-->
+	<source path='client' />
+</module>

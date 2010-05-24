@@ -1,0 +1,22 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MethodNameKeyGenerator"
+	ui:generateLocales="default">
+	<div class="slide">
+		<section class="center intro">
+			<p>
+				<ui:msg key="1_title" description="Title">Presentacion GWT</ui:msg>
+			</p>
+			<p>
+				<ui:msg key="1_press_key" description="Press Key">
+					Presione 
+					<ui:ph name="key_symbol">
+						<span class="key">→</span>
+					</ui:ph>
+					para avanzar.
+				</ui:msg>
+			</p>
+		</section>
+	</div>
+</ui:UiBinder>

@@ -1,0 +1,17 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"	ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+    ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MethodNameKeyGenerator"
+    ui:generateLocales="default">
+	<div class="slide">
+          <section class="center intro">
+            <hgroup>
+              <h1>
+                Google Web Toolkit
+              </h1>
+              <h2>
+                <ui:msg key="2_web_development" description="">Taking back the client</ui:msg>
+              </h2>
+            </hgroup>
+          </section>
+        </div>
+</ui:UiBinder>

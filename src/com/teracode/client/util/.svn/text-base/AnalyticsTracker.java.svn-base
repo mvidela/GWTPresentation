@@ -1,0 +1,139 @@
+package com.sfeir.gwt.html5.client.util;
+
+import com.google.gwt.core.client.GWT;
+import com.google.gwt.dom.client.Document;
+import com.google.gwt.dom.client.ScriptElement;
+import com.google.gwt.user.client.DeferredCommand;
+import com.google.gwt.user.client.IncrementalCommand;
+import com.google.gwt.user.client.Window;
+
+
+public class AnalyticsTracker {
+	private static String analytics_id = null;
+	private static boolean loaded = false;
+	private static boolean init = false;
+	
+
+	/**
+	 * Track a new page view
+	 * @param page Page url
+	 */
+	public static void trackPageView(final String page) {
+		if (isAnalyticsActive()) {
+			
+			DeferredCommand.addCommand(new IncrementalCommand() {
+				Integer number = 5;
+				@Override
+				public boolean execute() {
+					if (number-- < 0) {
+						throw new RuntimeException("Can not init the analytics tracker");
+					}
+					if (init()) {		
+						GWT.log(page);
+						jsTrackPageView(page);
+						return false;
+					}
+					return true;
+				}
+			});
+		}
+	}
+	
+	/**
+	 * Track a new Event
+	 * @param category Event Category
+	 * @param action Event action
+	 * @param label Event label
+	 * @param value Event value
+	 */
+	public static void trackEvent(final String category, final String action, final String label, final Integer value) {
+		if (isAnalyticsActive()) {
+			DeferredCommand.addCommand(new IncrementalCommand() {
+				Integer number = 5;
+				@Override
+				public boolean execute() {
+					if (number-- < 0) {
+						throw new RuntimeException("Can not init the analytics tracker");
+					}
+					if (init()) {
+						GWT.log(category + " " + action + " " + label + " " + value);
+						jsTrackEvent(category, action, label, value);
+						return false;
+					}
+					return true;
+				}
+			});
+		}
+	}
+	
+	/**
+	 * Load the Analytics
+	 */
+	public static void load() {
+		if (isAnalyticsActive()) {
+			if (!loaded) {
+				String gaJsHost = (Window.Location.getProtocol().equals("https:") ? "https://ssl." : "http://www.");
+				Document doc = Document.get();
+			    String src = gaJsHost + "google-analytics.com/ga.js";
+			    ScriptElement script = doc.createScriptElement();
+			    script.setSrc(src);
+			    script.setType("text/javascript");
+			    doc.getBody().appendChild(script);
+				loaded = true;
+			}
+			init();
+		}
+	}
+	
+	/**
+	 * Init the Analytics
+	 */
+	private static boolean init() {
+		if (!init) {
+			if (analytics_id == null) {
+				throw new RuntimeException("Analytics must have a valid key tracker");
+			}
+			init = jsInit(analytics_id);
+		}
+		return init;
+	}
+
+	private static native void jsTrackEvent(String category, String action, String label, Integer value) /*-{
+		if ($wnd.pageTracker) {
+			$wnd.pageTracker._trackEvent(category, action, label, value);
+		}
+	}-*/;
+	
+	private static native void jsTrackPageView(String page) /*-{
+		if ($wnd.pageTracker) {
+			$wnd.pageTracker._trackPageview(page);
+		}
+	}-*/;
+	
+	private static native boolean jsInit(String id)/*-{
+		try {
+			$wnd.pageTracker = $wnd._gat._getTracker(id);
+			return true;
+		} catch(err) {
+			return false;
+		}
+	}-*/;
+	
+	/**
+	 * Disable analytics tracking in developpment mode
+	 * @return
+	 */
+	private static boolean isAnalyticsActive() {
+		//return GWT.isScript();
+		return true;
+	}
+	
+	/**
+	 * Must be call before other methods
+	 * @param analyticsId
+	 */
+	public static void setAnalyticsId(String analyticsId) {
+		AnalyticsTracker.analytics_id = analyticsId;
+		load();
+	}
+}

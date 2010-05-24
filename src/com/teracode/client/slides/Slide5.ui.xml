@@ -1,0 +1,42 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MethodNameKeyGenerator"
+	ui:generateLocales="default">
+	
+	<ui:style>
+		li{
+			font-size: 20px;
+		}
+	</ui:style>
+	
+	<div class="slide">
+		<header><ui:msg key="3_header">Un poco de historia</ui:msg></header>
+		<section>
+			<ul class="summary">
+			  <li>
+			  		Hasta 1996 los browsers y websites estaban basados en paginas estáticas y cada accion del usuario
+					requeria que la página fuera re-cargada desde el servidor o que una nueva pagina fuera cargada.
+			  </li>
+			  <li>
+			  		Esto hacia que la interaccion de la aplicacion con el usuario fuera demasiado lenta.
+			  </li>
+			  
+			  <li>
+			  		Por ello, las aplicaciones cliente que requiriesen ofrecer interaccion con el usuario 
+					eran desarrolladas con lenguajes como C/C++, Visual Basic, Power Builder, etc.  Las aplicaciones
+					desarrolladas con estos lenguajes eran dependientes de la plataforma.  De ser necesario se utilizaba
+					comunicacion entre cliente servidor utilizando TCP como protocolo de transporte.
+			  </li>
+			  
+			  <li>
+			  		Estas aplicaciones eran llamadas aplicaciones "desktop" en contraposición a las aplicaciones "web"
+					que estaban haciendo su aparición.
+			  </li>
+			  <li>
+					En 1997 se agrego funcionalidad al DOM para para permitir cambios a una pagina previamente cargada.
+			  </li>
+			</ul>
+		</section>
+	</div>
+</ui:UiBinder>

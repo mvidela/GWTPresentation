@@ -1,0 +1,53 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MethodNameKeyGenerator"
+	ui:generateLocales="default">
+	
+	<ui:style>
+		li{
+			font-size: 20px;
+		}
+	</ui:style>
+	
+	<div class="slide">
+		<header><ui:msg key="3_header">Applicaciones Ajax tradicionales</ui:msg></header>
+		<section>
+		    <p>
+		    	Qué problemas presenta el desarrollo?
+		    </p>
+			<ul class="summary">
+				
+				<li>
+					Dada su naturaleza asincrónica, son mas dificiles de desarrollar que 
+					las paginas estaticas.
+				</li>
+				
+				<li>
+					Si bien numerosas librerias proveen soluciones para resolver la comunicacion
+					con el servidor, la serializacion, deserializacion y transformacion de datos
+					para ser presentados en al usuario es generalmente implementado por cada aplicacion.
+				</li>
+				
+				<li>
+					Las paginas dinamicas no actualizan engine de historia del browser 
+					(Botonges Atras/Adelante y bookmarks)
+				</li>
+				
+				<li>
+					Diferentes set de herramientas para el frontend y backend
+					
+					<ul class="summary">
+						<li>
+							JQuery, Dojo, Prototype en el cliente
+						</li>
+					
+						<li>
+							Java, Django, Ruby o PHP en el backend
+						</li>
+					</ul>
+				</li>
+			</ul> 
+		</section>
+	</div>
+</ui:UiBinder>

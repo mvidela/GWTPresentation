@@ -1,0 +1,56 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MethodNameKeyGenerator"
+	ui:generateLocales="default">
+	
+	<ui:style>
+		li{
+			font-size: 20px;
+		}
+	</ui:style>
+	
+	<div class="slide">
+		<header><ui:msg key="3_header">GWT</ui:msg></header>
+		<section>
+			<ul class="summary">
+				<li>
+					GWT nace en el 2006 luego de la experiencia de Google con Gmail y Maps para facilitar el 
+     				desarrollo de aplicaciones RIA sin la necesidad de plugiins.
+				</li>
+				
+				<li>
+					Puede entenderse como un compilador Java -> JavaScript 
+				</li>				
+				
+				<li>
+					Se integra facilmente con todas las herramientas Java incluyendo cualquier IDEs de desarrollo 
+				</li>
+				<li>
+					Incrementa la productividad y disminuye los errores al:
+					
+					<ul class="summary">
+						<li>
+							Al ofrecer un lenguaje fuertemente tipado		
+						</li>
+						<li>
+							Al permitir usar las mismas herramientas tanto en front end como en el back end		
+						</li>
+						<li>
+							Permitir depurar la aplicacion tal y como depuramos el codigo del servidor		
+						</li>
+						<li>
+							Simplificar la comunicacion cliente servidor		
+						</li>
+						<li>
+							Brindar un entorno independiente de la plataforma (browser)		
+						</li>
+						<li>
+							Permitir re-utilizar codigo entre el cliente y el servidor, por ejemplo, los objetos de dominio.		
+						</li>
+					</ul> 
+				</li>
+			</ul> 
+		</section>
+	</div>
+</ui:UiBinder>

@@ -1,0 +1,57 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MethodNameKeyGenerator"
+	ui:generateLocales="default">
+	
+	<ui:style>
+		li{
+			font-size: 20px;
+		}
+	</ui:style>
+	
+	<div class="slide">
+		<header><ui:msg key="3_header">Applicaciones Ajax tradicionales</ui:msg></header>
+		<section>
+		    <p>
+		    	Qué problemas presenta el desarrollo (Cont)?
+		    </p>
+			<ul class="summary">
+				<li>
+					El uso de javaScript dificulta el desarrollo y mantenimiento dada 
+					la naturaleza dinámica del lenguaje.
+					
+					<ul class="summary">
+						<li>
+							Despues de todo... 
+							<a href="http://javascript.crockford.com/javascript.html">Is "The World's Most Misunderstood Programming Language"</a>
+						</li>
+						<li>
+							No es fuertemente tipado
+						</li>
+						
+						<li>
+							Es un lenguaje de proposito general por lo que no fuerza
+							a un modelo de desarrollo
+						</li>
+						
+						<li>
+							Deben lidiar con las distintas implementaciones del lenguaje
+							y otros componentes como el DOM, CSS, etc.
+						</li>
+						
+						<li>
+							Si bien existen excelentes librerias que facilitan el desarrollo,
+							no es un lenguaje que facilite la mantenibilidad.
+						</li>
+						
+						<li>
+							Fue creado como un lenguaje de scripting y no para crear frameworks
+							o aplicaciones complejas.
+						</li>						
+					</ul>
+				</li>				
+			</ul> 
+		</section>
+	</div>
+</ui:UiBinder>
