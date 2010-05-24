@@ -42,7 +42,7 @@ public class SlideViewer implements EntryPoint, ValueChangeHandler<String> {
 
 	public SlideViewer(){
 		GWT.setUncaughtExceptionHandler(new UncaughtExceptionHandler() {
-			@Override
+			
 			public void onUncaughtException(Throwable e) {
 				if (!GWT.isScript())
 					e.printStackTrace();
@@ -55,7 +55,6 @@ public class SlideViewer implements EntryPoint, ValueChangeHandler<String> {
 	public void onModuleLoad() {
 		//To ensure the uncaughtexceptionhandler is registered, loading must be done in a deferred command
 		DeferredCommand.addCommand(new Command() {
-			@Override
 			public void execute() {
 				doModuleLoad();
 			}
@@ -63,7 +62,6 @@ public class SlideViewer implements EntryPoint, ValueChangeHandler<String> {
 		
 		GWT.setUncaughtExceptionHandler( new UncaughtExceptionHandler() { 
 			
-			@Override
 			public void onUncaughtException(Throwable e) {
 				e.printStackTrace();
 			}
@@ -172,7 +170,6 @@ public class SlideViewer implements EntryPoint, ValueChangeHandler<String> {
 //		slides.add(new Slide46());
 	}
 
-	@Override
 	public void onValueChange(ValueChangeEvent<String> event) {
 		String token = event.getValue();
 		int slideNumber = parseSlideNumber(token);

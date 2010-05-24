@@ -17,7 +17,6 @@ public class Slide8 extends Widget implements Presentable {
 		setElement(uiBinder.createAndBindUi(this));
 	}
 
-	@Override
 	public Widget asWidget() {
 		return this;
 	}
